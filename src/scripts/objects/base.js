@@ -16,7 +16,7 @@ const material = new THREE.ShaderMaterial({
   uniforms: {
     resolution: {value: new THREE.Vector2(window.innerWidth, window.innerHeight)},
     time: {
-      value: 0
+      value: performance.now()
     },
     mouse: {
       value: mousePosition,
@@ -29,9 +29,10 @@ const mesh = new THREE.Mesh(geometory, material);
 
 // Uniformのアップデート部分
 const updateUniform = () => {
-    mesh.material.uniforms.time.value += 1;
+    mesh.material.uniforms.time.value = performance.now();
     mesh.material.uniforms.mouse.value = mousePosition;
 }
+
 
 export default {
   mesh: mesh,
