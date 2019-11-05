@@ -2,7 +2,7 @@ import * as DOM from './constants/DomElements';
 import * as THREE from 'three';
 import resize from './lib/resize';
 
-import BaseObject from './materials/base';
+import BaseObject from './objects/base';
 
 const elCanvas = document.createElement('canvas');
 document.getElementById(DOM.MAIN_CONTAINER).appendChild(elCanvas);
