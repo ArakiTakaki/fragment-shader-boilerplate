@@ -32,11 +32,11 @@ $ open http://localhost:1234
 
 ### 最初からあるuniform一覧
 
-| name       | type  |
-|------------|-------|
-| resolution | vec2  |
-| mouse      | vec2  |
-| time       | float |
+| name       | type  | 効果                                          |
+|------------|-------|-----------------------------------------------|
+| resolution | vec2  | ディスプレイの幅と高さを取得する（px）        |
+| mouse      | vec2  | マウスの現在位置を取得する(px)                |
+| time       | float | 経過時間を取得する(1fps経過に対し1追加される) |
 
 
 ### uniformを追加したい場合
