@@ -6,7 +6,7 @@
 - yarn
 
 
-## npmが初めての方
+## NodeJSを初めて使用する方
 
 `$ npm install -g yarn`を実行してください
 
