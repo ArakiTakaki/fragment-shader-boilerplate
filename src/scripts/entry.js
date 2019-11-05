@@ -22,7 +22,7 @@ scene.add(BaseObject.mesh);
 const render = () => {
   requestAnimationFrame(render);
   renderer.render(scene, camera);
-  BaseObject.render();
+  BaseObject.update();
 };
 
 render();
