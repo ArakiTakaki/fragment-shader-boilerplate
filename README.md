@@ -1,8 +1,18 @@
 # fragment-shader-boilerplate
 
+## 必須環境
+
+- [Node10以上](https://nodejs.org/ja/)
+- yarn
+
+
+## npmが初めての方
+
+`$ npm install -g yarn`を実行してください
+
 ## プロジェクトの起動方法
 
-```sh
+```shell
 $ git clone https://github.com/ArakiTakaki/fragment-shader-boilerplate
 $ cd fragment-shader-boilerplate
 $ yarn install
