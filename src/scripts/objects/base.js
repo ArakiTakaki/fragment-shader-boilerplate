@@ -21,6 +21,9 @@ const material = new THREE.ShaderMaterial({
     mouse: {
       value: mousePosition,
     },
+    random: {
+      value: Math.random(),
+    }
   },
   vertexShader: vs,
   fragmentShader: fs,
@@ -29,8 +32,9 @@ const mesh = new THREE.Mesh(geometory, material);
 
 // Uniformのアップデート部分
 const updateUniform = () => {
-    mesh.material.uniforms.time.value = performance.now();
-    mesh.material.uniforms.mouse.value = mousePosition;
+  mesh.material.uniforms.time.value = performance.now();
+  mesh.material.uniforms.mouse.value = mousePosition;
+  mesh.material.uniforms.random.value = Math.random();
 }
 
 

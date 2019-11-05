@@ -37,6 +37,7 @@ $ open http://localhost:1234
 | resolution | vec2  | ディスプレイの幅と高さを取得する（px）        |
 | mouse      | vec2  | マウスの現在位置を取得する(px)                |
 | time       | float | 経過時間を取得する(1fps経過に対し1追加される) |
+| random     | float | 0-1からなるランダムな値が毎フレーム入る |
 
 
 ### uniformを追加したい場合
